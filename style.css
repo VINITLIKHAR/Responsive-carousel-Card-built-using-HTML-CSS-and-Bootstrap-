@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    height: 5rem;
+    border-radius: 50%;
+}
+
+ul li {
+    margin: 10px !important;
+}
+
+ul li a {
+    color: white !important;
+}
+
+input {
+    padding: 10px 20px !important;
+}
+
+.btn {
+    padding: 10px 20px !important;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-inner::before {
+    content:"";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+    margin-bottom: 400px;
+}
+
+.carousel-indicators button {
+    height: 20px !important;
+    border-radius: 50%;
+    width: 20px !important;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    border: 2px solid red;
+    padding: 2px 5px !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(./1600w-JmYWTjUsE-Q.webp);
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-caption {
+        margin-bottom: 170px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        top: 200px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
